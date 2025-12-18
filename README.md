@@ -16,6 +16,7 @@ The solution was developed as part of a Generative AI assignment and emphasizes:
 ## System Architecture
 
 **High-level flow:**
+```bash
 User Query
 ↓
 Query Embedding (Sentence-Transformers)
@@ -27,11 +28,11 @@ Candidate Assessments
 LLM-based Reasoning (Selection Layer)
 ↓
 Final Assessment Recommendations
-
+```
 ---
 
 ## Project Structure
-
+```bash
 shl_assignment/
 │
 ├── notebooks/
@@ -48,15 +49,15 @@ shl_assignment/
 │ └── app.py # FastAPI service exposing /recommend endpoint
 │
 └── README.md
-
+```
 
 **Data directory (outside repo code):**
-
+```bash
 GenAI-Dataset/
 ├── shl_metadata.csv
 ├── shl_embeddings.npy
 └── Gen_AI_Dataset.xlsx
-
+```
 
 ---
 
