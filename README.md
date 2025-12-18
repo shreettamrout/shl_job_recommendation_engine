@@ -133,8 +133,10 @@ run_evaluation(
 EOF
 ```
 
-### 3. 3. Run API Server
+### 3. Run API Server
 ```bash
 uvicorn api.app:app --host 0.0.0.0 --port 8000
 ```
+### Colab Notebook Link
+https://colab.research.google.com/drive/1PVRrvA0s5fxGYBZMfL4XgnTqQDH90gSz?usp=sharing
 
