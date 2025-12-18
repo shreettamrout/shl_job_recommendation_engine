@@ -114,3 +114,26 @@ conda create -n shl_env python=3.10 -y
 conda activate shl_env
 conda install -c conda-forge faiss-cpu pandas numpy scikit-learn -y
 pip install sentence-transformers fastapi uvicorn
+```
+### 2. Run Evaluation
+From the project root:
+```bash
+python - <<EOF
+from src.pipeline import AssessmentRecommenderPipeline
+from src.evaluation import run_evaluation
+
+pipeline = AssessmentRecommenderPipeline()
+
+run_evaluation(
+    labels_path="../GenAI-Dataset/Gen_AI_Dataset.xlsx",
+    pipeline=pipeline,
+    k=5
+)
+EOF
+```
+
+### 3. 3. Run API Server
+```bash
+uvicorn api.app:app --host 0.0.0.0 --port 8000
+```
+
