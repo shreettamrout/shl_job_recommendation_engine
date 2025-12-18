@@ -16,7 +16,17 @@ The solution was developed as part of a Generative AI assignment and emphasizes:
 ## System Architecture
 
 **High-level flow:**
-
+User Query
+↓
+Query Embedding (Sentence-Transformers)
+↓
+Dense Retrieval (FAISS)
+↓
+Candidate Assessments
+↓
+LLM-based Reasoning (Selection Layer)
+↓
+Final Assessment Recommendations
 
 ---
 
